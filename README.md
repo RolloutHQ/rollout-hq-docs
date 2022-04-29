@@ -1,14 +1,18 @@
 # 🚀 Quick Start Guide
 
 ### 🌍 Overview
-RolloutHQ provides a highly customizable embedded UI that allows your users to authenticate with the tools they use and specify how to connect them to your app. Through the RolloutHQ UI, users can connect `Triggers`, events that occur in one app, to `Actions`, operations that can be performed in another app.
+RolloutHQ provides a highly customizable embedded UI that allows your users to authenticate with the tools they use and specify how to connect them to your app. Through the embedded UI, your users can connect `Triggers`, events that occur in one app, to `Actions`, operations that can be performed in another app.
 
 In the example below, the user is configuring an integration so that every time they complete a task (`Trigger`) in their favorite todo app, a Slack message is sent (`Action`):
 
 ![Screen Shot 2022-04-28 at 8 55 59 PM](https://user-images.githubusercontent.com/733804/165949909-b672b228-f7bc-4273-99dd-7c318b38ccdc.png)
 
 
-This guide will help you get up and running with a simple RolloutHQ implementation that gives your users access to 100s of integrations with about an hour of setup! 
+This guide will help you get up and running with a simple RolloutHQ implementation that gives your users access to 100s of integrations in four steps:
+1. [Authenticate via a signed JWT](#-authentication)
+2. [Install and render the RolloutHQ embedded UI](#-rendering-the-embedded-ui)
+3. [Define your triggers](#-defining-triggers) 
+4. [Start sending data to RolloutHQ](#-sending-trigger-events-to-rollouthq)
 
 
 ### 🔐 Authentication
