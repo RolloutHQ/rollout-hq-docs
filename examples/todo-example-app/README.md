@@ -1,10 +1,12 @@
 # ✅ Todo App Example
 
-This example apps takes the classic Todo MVC app and adds functionality that enables users to perform actions in other apps.
+This example apps takes the classic [Todo MVC app](https://todomvc.com/examples/typescript-react/#/) and adds functionality that enables users to perform actions in other apps.
 
-Starting from this:
 
-We get this:
+When rendered, the example app looks like this:
+
+![Screen Shot 2022-04-29 at 9 26 14 AM](https://user-images.githubusercontent.com/733804/165964045-9fa221aa-2d17-4610-b96d-9a96f8a1549e.png)
+
 
 ### 🪛 Installation
 
@@ -12,9 +14,10 @@ The Todo App example is built using react, so the React component is installed v
 
 Not using react? You can install via `@rollouthq/connect-widget`.
 
+
 ### 📄 Rendering the UI
 
-All we need to do is render the React component and pass in a RolloutHQ component for authentication.
+All you need to do is [render the React component](https://github.com/PlaybookWorkflows/rollout-hq-docs/blob/55aeefbaae66e2f156d6d1d7509649dfebfed0f9/examples/todo-example-app/app.js#L95) and pass in a RolloutHQ token for authentication.
 
 If you're using another framework you can import the `renderWidget` function instead:
 
@@ -23,3 +26,8 @@ import { renderWidget, WIDGETS } from @rollouthq/connect-widget
 
 renderWidget(WIDGETS.AUTOMATION_MANAGER, options);
 ```
+
+
+### 🧑‍🎨 Custom Styling
+RolloutHQ exposes CSS classes that allow you to [style the embedded UI](https://github.com/PlaybookWorkflows/rollout-hq-docs/blob/main/examples/todo-example-app/rollouthqstyles.css) to match the look and feel of your app. If you're looking to get started event faster, you can also import and use our default theme.
+
