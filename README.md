@@ -11,7 +11,7 @@ This guide will help you get up and running with a simple RolloutHQ implementati
 
 
 ### 🔐 Authentication
-Authentication with RolloutHQ is via JWT. In order to generate a JWT, you'll need your `Client Id` and and `Client Secret` which can be found under Settings > Security in the RolloutHQ dashboard:
+Authentication with RolloutHQ is achieved by means of a privately signed JWT. In order to generate the signed JWT, you'll need your `Client Id` and `Client Secret` which can be found under Settings > Security in the RolloutHQ dashboard:
 
 <img width="1308" alt="Screen Shot 2022-04-28 at 7 45 13 PM" src="https://user-images.githubusercontent.com/733804/165869386-1d7b584f-daa2-497e-857d-e9514063ee68.png">
 
