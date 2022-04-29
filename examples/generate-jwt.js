@@ -1,4 +1,4 @@
-// RolloutHQ enforces a max token lifetime of 1 hour, but it's reccommended for tokens
+// RolloutHQ enforces a max token lifetime of 1 hour, but it's recommended for tokens
 // to be as short-lived as possible
 const TOKEN_TTL_SECS = 300; // 5 mins
 
