@@ -1,0 +1,91 @@
+.rollout-automations-list__new-btn {
+	display: inline-block;
+	padding: 8px 16px;
+	white-space: nowrap;
+	background-color: #AA4849;
+	color: white;
+	border-radius: 4px;
+}
+
+.rollout-automations-list__list,
+.rollout-automations-list__empty-msg {
+  margin-top: 12px;
+}
+
+.rollout-automations-list__empty-msg {
+    text-align: center;
+    padding: 20px;
+    border: 1px dashed #AA4849;
+    border-radius: 4px;
+}
+
+.rollout-automations-list__item {
+	margin-bottom: 8px;
+	padding: 12px;
+	border: 1px solid #D5DCE2;
+	border-radius: 4px;
+}
+
+.rollout-automations-list-item__name {
+	margin-top: 12px;
+	font-size: 13px;
+}
+
+.rollout-automations-manager__navbar {
+    padding-bottom: 12px;
+    margin-bottom: 12px;
+    border-bottom: 1px solid #D5DCE2;
+}
+
+.rollout-automations-manager__back-btn {
+    display: inline-block;
+    padding: 8px 0;
+}
+
+.rollout-automations-manager__back-btn::before {
+	display: inline-block;
+	content: "←";
+	margin-right: 8px;
+}
+
+.rollout-automation-form__name,
+.rollout-automation-form__trigger,
+.rollout-automation-form__action,
+.rollout-automation-form__action-inputs {
+	margin-bottom: 20px;
+}
+
+.rollout-automation-form__trigger,
+.rollout-automation-form__action,
+.rollout-automation-form__action-inputs {
+	border: 1px solid #D5DCE2;
+	border-radius: 4px;
+	padding: 16px;
+}
+
+.rollout-automation-form__label {
+	font-weight: bold;
+	margin-bottom: 12px;
+}
+
+.rollout-automation-form__helper-text {
+	display: none;
+}
+
+.rollout-automation-form__app-action,
+.rollout-automation-form__credentials {
+	margin-top: 10px;
+}
+
+.rollout-automation-form__submit {
+	display: inline-block;
+	padding: 4px 8px;
+	border-radius: 2px;
+	background: #AA4849;
+	color: white;
+}
+
+.rollout-automation-form__submit[disabled],
+.rollout-automation-form__submit[data-loading] {
+	opacity: 0.3
+}
