@@ -15,15 +15,13 @@ Authentication with RolloutHQ is via JWT. In order to generate a JWT, you'll nee
 
 <img width="1308" alt="Screen Shot 2022-04-28 at 7 45 13 PM" src="https://user-images.githubusercontent.com/733804/165869386-1d7b584f-daa2-497e-857d-e9514063ee68.png">
 
-The `iss` claim of the token is your Client Id, while the `sub` claim is a unique, persistent identifer that specifies the current user. 
-
-See the JWT generation code example (link to code example).
+The `iss` claim of the token is your Client Id, while the `sub` claim is a unique, persistent identifer that specifies the current user. See the JWT generation [example code](https://github.com/PlaybookWorkflows/rollout-hq-docs/blob/main/examples/generate-jwt.js).
 
 
 ### 🎨 Rendering the Embedded UI
-Now that you can generate a JWT to authenticate the current user, you're ready to render the embedded UI. See the Todo Example App (link) for details on rendering and styling RolloutHQ's UI.
+Now that you can generate a JWT to authenticate the current user, you're ready to render the embedded UI. See the [Todo Example App](https://github.com/PlaybookWorkflows/rollout-hq-docs/tree/main/examples/todo-example-app#readme) for details on rendering and styling RolloutHQ's UI.
 
-A wide range of user experiences are possible, from integrations that you define ahead of time and and just require the user to authenticate, to UI that allows users to map trigger data to the app and action of their choosing. The Todo Example App uses the `AutomationsManager` component, which provides a fully encapsulated experience that allows create and edit integrations from a single place.
+A wide range of user experiences are possible, from integrations that you define ahead of time and and just require the user to authenticate, to UI that allows users to map trigger data to the app and action of their choosing. The Todo Example App uses the `AutomationsManager` component, which provides a fully encapsulated experience that allows users create and edit integrations from a single place.
 
 ### 🧑‍💻 Defining Triggers
 `Triggers` are the types of events emitted by your app that can be used as input to `Actions` in other apps. For a booking app, this might correspond to "New Event Booked"; for a todo app, this might correspond to "Task Created" or "Task Completed". You can optionally provide a callback url where RolloutHQ will send the results `Actions` executed as a result of that `Trigger`. 
@@ -39,5 +37,5 @@ A wide range of user experiences are possible, from integrations that you define
 The final step is to start sending `Trigger` events to RolloutHQ, so that we can execute `Actions` on behalf of your users.
 
 There are two ways to send data to RolloutHQ:
-1. `Push Triggers` are sent to RolloutHQ's `trigger-event` API endpoint from your app when an instance of your trigger occurs. See the todo app for an example (link to example push trigger). 
-2. `Rest Hook Triggers` implement the [Rest Hook patterns](https://resthooks.org/). If you've implemented a Zapier integration, you can configure RolloutHQ to leverage your existing rest hook triggers and send the same events to both Zapier and RolloutHQ.
+1. `Push Triggers` are sent to RolloutHQ's `trigger-event` API endpoint from your app when an instance of your trigger occurs. The Todo Example [app uses `Push Triggers`](https://github.com/PlaybookWorkflows/rollout-hq-docs/blob/e2fc6e153d8f35c987dd83cf07277c570a1812d4/examples/todo-example-app/app.js#L103). 
+2. `Rest Hook Triggers` implement [Rest Hook patterns](https://resthooks.org/). If you've implemented a Zapier integration, you can configure RolloutHQ to leverage your existing rest hook triggers and send the same events to both Zapier and RolloutHQ.
