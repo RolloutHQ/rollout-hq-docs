@@ -19,12 +19,27 @@ Not using react? You can install via `@rollouthq/connect-widget`.
 
 All you need to do is [render the React component](https://github.com/PlaybookWorkflows/rollout-hq-docs/blob/55aeefbaae66e2f156d6d1d7509649dfebfed0f9/examples/todo-example-app/app.js#L95) and pass in a RolloutHQ token for authentication.
 
-If you're using another framework you can import the `renderWidget` function instead:
+If you're using a different framework, you can import the `renderComponent` function instead. See the Vue example below:
 
 ```
-import { renderWidget, WIDGETS } from @rollouthq/connect-widget
+<template>
+  <div ref="automationsManager"></div>
+</template>
 
-renderWidget(WIDGETS.AUTOMATION_MANAGER, options);
+<script>
+  import { renderComponent, COMPONENTS } from @rollouthq/connect-component;
+
+  export default {
+    name: 'Automations Manager',
+    props: ['rolloutHQToken'],
+    mounted: function () {
+      const options = {
+        token: this.$props.rolloutHQToken,
+      };
+      renderComponent(this.$refs.automationsManager, COMPONENTS.AUTOMATIONS_MANAGER, options);
+    },
+  };
+</script>
 ```
 
 
