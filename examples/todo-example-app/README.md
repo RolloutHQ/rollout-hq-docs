@@ -12,7 +12,7 @@ When rendered, the example app looks like this:
 
 The Todo App example is built using react, so the React component is installed via `npm install @rollouthq/connect-react`.
 
-Not using react? You can install via `@rollouthq/connect-widget`.
+Not using react? You can install via `@rollouthq/connect-component`.
 
 
 ### 📄 Rendering the UI
