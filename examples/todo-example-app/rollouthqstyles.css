@@ -1,58 +1,362 @@
+.my-automations-wrapper {
+	box-shadow: 0 2px 4px 0 rgb(0 0 0 / 20%), 0 25px 50px 0 rgb(0 0 0 / 10%);
+	background: white;
+	margin-bottom: 20px;
+	font-size: 16px;
+	font-weight: 400;
+}
+
+.rollout-automations-list__container {
+	padding-bottom: 16px;
+}
+
+.rollout-automations-list__loading {
+	margin-inline: 16px;
+}
+
+.rollout-automations-list__header {
+	display: flex;
+	padding: 16px;
+	align-items: center;
+	justify-content: space-between;
+}
+
+.rollout-combobox__input {
+	outline: none;
+	border: none;
+	width: 100%;
+	padding-left: 40px;
+	padding-right: 40px;
+	padding-top: 10px;
+	padding-bottom: 10px;
+	border-radius: 4px;
+	outline: none;
+	font-size: 16px;
+}
+
+.rollout-combobox__input[data-disabled] {
+	opacity: 0.4;
+	cursor: not-allowed;
+}
+
+.rollout-combobox__input:focus {
+	border-color: red;
+}
+
+.rollout-combobox__input__group {
+	position: relative;
+	display: flex;
+	outline: none;
+	border-width: 1px;
+	border-radius: 4px;
+	border-style: solid;
+	border-color: #D5DCE2;
+}
+
+.rollout-combobox__input__group[data-focused] {
+	border-color: #AA4849;
+}
+
+.rollout-combobox__input__group[data-disabled] {
+	cursor: not-allowed;
+	opacity: 0.8;
+}
+
+.rollout-combobox__input__left-element,
+.rollout-combobox__input__right-element {
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	position: absolute;
+	pointer-events: none;
+	top: 50%;
+	transform: translateY(-50%);
+	z-index: 2;
+	color: #91959C;
+}
+
+.rollout-combobox__input__left-element {
+	size: 24px;
+	left: 8px;
+	border-width: 1px;
+	border-color: #EFF1F4;
+	border-style: solid;
+	border-radius: 6px;
+	background: white;
+}
+
+[role=group][data-avatar][data-selected] .rollout-combobox__input__left-element {
+	background: transparent;
+	border: none;
+	color: white;
+	font-size: 11px;
+}
+
+.rollout-combobox__input__right-element {
+	width: 16px;
+	height: 16px;
+	right: 8px;
+}
+
+.rollout-combobox__input__spinner {
+	width: 12px;
+	height: 12px;
+}
+
+.rollout-listbox {
+	max-height: 288px;
+	overflow-x: hidden;
+	overflow-y: auto;
+	outline: none;
+	border: solid 1px;
+	border-color: #D5DCE2;
+	border-radius: 4px;
+}
+
+.rollout-listbox__option {
+	padding: 8px;
+	font-size: 13px;
+	outline: none;
+	cursor: pointer;
+	display: flex;
+	align-items: center;
+	border-bottom: solid 1px;
+	border-color: #F8F9FB;
+	justify-content: flex-start;
+}
+
+.rollout-listbox__option[data-focused] {
+	background: #F4F5F8;
+}
+
+.rollout-listbox__option[data-selected] {
+	font-weight: 700
+}
+
+.rollout-listbox__option-icon {
+	border-width: 1px;
+	border-color: #EFF1F4;
+	border-style: solid;
+	border-radius: 4px;
+	background: white;
+	width: 24px;
+	height: 24px;
+	padding: 4px;
+	margin-right: 6px;
+}
+
+[role=group][data-avatar] .rollout-listbox__option-icon {
+	background: #C3C7CE;
+	color: white;
+	border: none;
+	border-radius: 100%;
+	padding: 0;
+	font-size: 11px;
+}
+
+.rollout-automations-list__search-input__group {
+	display: none;
+}
+
 .rollout-automations-list__new-btn {
-	display: inline-block;
-	padding: 8px 16px;
+	display: flex;
+	padding: 6px 12px;
+	align-items: center;
+	gap: 8px;
+	font-size: 12px;
 	white-space: nowrap;
-	background-color: #AA4849;
+	background: #AA4849;
 	color: white;
 	border-radius: 4px;
 }
 
-.rollout-automations-list__list,
-.rollout-automations-list__empty-msg {
-  margin-top: 12px;
+.rollout-automations-list__new-btn:hover {
+	background: #933b3c
 }
 
 .rollout-automations-list__empty-msg {
-    text-align: center;
-    padding: 20px;
-    border: 1px dashed #AA4849;
-    border-radius: 4px;
+	text-align: center;
+	padding: 20px;
+	border: 1px dashed #AA4849;
+	border-radius: 4px;
+	margin-inline: 16px;
+}
+
+.rollout-automations-list__content {
+	width: 157px;
+}
+
+.rollout-automations-list__list {
+	padding-left: 16px;
+	padding-right: 16px;
 }
 
 .rollout-automations-list__item {
 	margin-bottom: 8px;
-	padding: 12px;
+	padding: 16px;
 	border: 1px solid #D5DCE2;
 	border-radius: 4px;
+	cursor: pointer;
+	transition: border-color .2s ease;
+}
+
+.rollout-automations-list__item:hover {
+	border: 1px solid #6C6F75;
+}
+
+.rollout-automations-list-item__header {
+	display: flex;
+	align-items: center;
+	justify-content: space-between;
+}
+
+.rollout-automations-list-item__icons {
+	display: inline-flex;
+	width: fit-content;
+	height: fit-content;
+}
+
+.rollout-automations-list-item__trigger,
+.rollout-automations-list-item__action {
+	margin-right: 8px;
+	font-size: 24px;
 }
 
 .rollout-automations-list-item__name {
+	height: 60px;
 	margin-top: 12px;
+	font-size: 16px;
+	font-weight: 600;
+	color: #31373F;
+}
+
+.rollout-automations-list__options__trigger {
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	border-radius: 4px;
+	cursor: pointer;
+	color: #C3C7CE;
+	transition: all .2s ease;
+	padding-left: 8px;
+	padding-right: 8px;
+	width: 24px;
+	height: 24px;
+}
+
+.rollout-automations-list__options__trigger:hover {
+	background: #F4F5F8;
+	color: #6C6F75;
+}
+
+.rollout-automations-list-item__options__trigger,
+.rollout-automations-form-delete__trigger {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border-radius: 4px;
+  cursor: pointer;
+  color: #91959C;
+  transition: all .2s ease;
+  size: 32px;
+}
+
+.rollout-automations-list-item__options__trigger:hover,
+.rollout-automations-form-delete__trigger:hover {
+	background: rgba(219, 97, 92, 0.1);
+	color: #DB615C;
+}
+
+.rollout-automations-list-item__options__trigger svg,
+.rollout-automations-form-delete__trigger svg {
+	width: 20px;
+	height: 20px;
+}
+
+.rollout-automations-list__delete-item-btn {
 	font-size: 13px;
+	font-weight: 500;
+	color: red;
+	background: rgba(219, 97, 92, 0.1);
+	height: 28px;
+	display: flex;
+	gap: 4px;
+	align-items: center;
+	padding: 8px;
+	border-radius: 4px;
+	cursor: pointer;
+}
+
+.rollout-automations-list__delete-item-btn svg {
+	width: 16px;
+	height: 16px;
+}
+
+.rollout-automations-manager {
+	padding-bottom: 16px;
+}
+
+.rollout-automations-editor__loading {
+	margin-inline: 16px;
+}
+
+.rollout-automations-editor__not-found {
+	margin-inline: 16px;
 }
 
 .rollout-automations-manager__navbar {
-    padding-bottom: 12px;
-    margin-bottom: 12px;
-    border-bottom: 1px solid #D5DCE2;
+	padding-left: 16px;
+	padding-top: 12px;
+	padding-bottom: 12px;
+	border-bottom: 1px solid #D5DCE2;
 }
 
 .rollout-automations-manager__back-btn {
-    display: inline-block;
-    padding: 8px 0;
-}
-
-.rollout-automations-manager__back-btn::before {
 	display: inline-block;
-	content: "←";
-	margin-right: 8px;
+	padding: 8px 0;
 }
 
-.rollout-automation-form__name,
-.rollout-automation-form__trigger,
-.rollout-automation-form__action,
-.rollout-automation-form__action-inputs {
-	margin-bottom: 20px;
+.rollout-automations-manager__back-btn:hover {
+	color: #AA4849;
+}
+
+.rollout-automation-form {
+	padding-bottom: 16px;
+}
+
+.rollout-automation-form__header,
+.rollout-automation-form-delete__options {
+    display: flex;
+    align-items: center;
+}
+
+.rollout-automation-form-delete__options__cancel-item-btn,
+.rollout-automation-form-delete__options__delete-item-btn {
+    font-size: 13px;
+    white-space: nowrap;
+    border: 1px solid #d4dce1;
+    border-radius: 4px;
+    padding: 4px;
+}
+
+.rollout-automation-form-delete__options__delete-item-btn {
+    color: #AA4849;
+}
+
+.rollout-automation-form__header {
+	padding: 16px;
+	padding-bottom: 0;
+	gap: 8px;
+}
+
+.rollout-automation-form__name {
+	height: 36px;
+	padding: 0 8px;
+	font-weight: 600;
+	font-size: 16px;
+	background: none;
+	border: 1px solid #D5DCE2;
+	border-radius: 4px;
 }
 
 .rollout-automation-form__trigger,
@@ -61,15 +365,7 @@
 	border: 1px solid #D5DCE2;
 	border-radius: 4px;
 	padding: 16px;
-}
-
-.rollout-automation-form__label {
-	font-weight: bold;
-	margin-bottom: 12px;
-}
-
-.rollout-automation-form__helper-text {
-	display: none;
+	margin-top: 16px;
 }
 
 .rollout-automation-form__app-action,
@@ -77,15 +373,106 @@
 	margin-top: 10px;
 }
 
-.rollout-automation-form__submit {
-	display: inline-block;
-	padding: 4px 8px;
-	border-radius: 2px;
+.rollout-automation-form__label {
+	font-size: 18px;
+	font-weight: 600;
+	margin-bottom: 4px;
+}
+
+.rollout-automation-form__helper-text {
+	margin-bottom: 4px;
+}
+
+:not([role=group][data-ready]) .rollout-automation-form__action-inputs>.rollout-automation-form__label {
+	color: #91959C;
+	margin-bottom: 0;
+}
+
+.rollout-automation-form__content {
+	padding-left: 16px;
+	padding-right: 16px;
+	margin-bottom: 16px;
+}
+
+.rollout-button--primary {
+	display: flex;
+	align-items: center;
+	gap: 8px;
+	padding: 6px 20px;
+	white-space: nowrap;
 	background: #AA4849;
+	border-radius: 2px;
+	height: 32px;
 	color: white;
+}
+
+.rollout-button--primary:hover {
+	background: #933b3c;
+}
+
+.rollout-automation-form__submit {
+	margin-left: 16px
 }
 
 .rollout-automation-form__submit[disabled],
 .rollout-automation-form__submit[data-loading] {
-	opacity: 0.3
+	opacity: 0.3,
+}
+
+.rollout-form-field__label {
+	margin-bottom: 4px;
+	font-size: 13px;
+	font-weight: 500;
+}
+
+.rollout-form-control__required-hint {
+	color: #AA4849
+}
+
+.rollout-form-control__description {
+	margin-bottom: 4px;
+	font-size: 13px;
+}
+
+.rollout-form-control__error {
+	margin-top: 4px;
+	font-size: 13px;
+	color: red;
+}
+
+.rollout-automation-form__api-token-input {
+	margin-bottom: 16px;
+}
+
+.rollout-automation-form__api-token-input-info {
+	font-size: 0.75rem;
+	margin-bottom: 6px;
+	color: #6C6F75;
+}
+
+.rollout-automation-form__api-token-input-label {
+	font-size: 13px;
+	margin-top: 6px;
+}
+
+.rollout-automation-form__api-token-input-container {
+	margin-top: 8px;
+}
+
+.rollout__loading_spinner_container {
+	padding: 1rem;
+	display: flex;
+	justify-content: center;
+}
+
+.rollout__loading_spinner {
+	height: 1rem;
+	width: 1rem;
+}
+
+.rollout-automations-list__error-msg {
+	text-align: center;
+	padding: 20px;
+	border: 1px dashed #AA4849;
+	border-radius: 4px;
 }
