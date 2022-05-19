@@ -8,7 +8,7 @@ You can install the Rollout packacae via NPM:
 `npm install @rollouthq/connect-react`
 
 and then import the components from the package:
-`import { AutomationsEditor } from "@rollouthq/connect-react";`
+`import { AutomationsManager } from "@rollouthq/connect-react";`
 
 ## 📝 Available Components
 
