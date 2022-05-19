@@ -12,6 +12,6 @@ function generateRolloutConnectToken(userId) {
       exp: nowSecs + TOKEN_TTL_SECS, // Token expiration
     },
     process.env.ROLLOUT_CONNECT_PRIVATE_KEY, // Downloaded from the RolloutHQ dashboard
-    { algorithm: "RS256" }
+    { algorithm: "HS512" }
   );
 }
