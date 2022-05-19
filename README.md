@@ -6,6 +6,6 @@ Steps to set up a simple RolloutHQ implementation
 ### 🧩 [React Components]
 Documentation on the RolloutHQ react components
 
-### ⚙️ [API]
+### ⚙️ API (Coming Soon)
 Description of available API endpoints
 
