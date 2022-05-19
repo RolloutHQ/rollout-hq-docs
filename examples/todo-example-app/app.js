@@ -103,7 +103,7 @@ export function App({ firebaseIdToken }) {
 // Send push trigger events to RolloutHQ
 function sendTaskCreatedEvent(rolloutConnectToken, taskName) {
   axios.post(
-    "https://app.rollout.com/api/trigger-event",
+    "https://app.rollouthq.com/api/trigger-event",
     { triggerKey: "task_created", payload: { task_name: taskName } },
     { Authorization: `Bearer ${rolloutConnectToken}` }
   );
@@ -111,7 +111,7 @@ function sendTaskCreatedEvent(rolloutConnectToken, taskName) {
 
 function sendTaskCompletedEvent(rolloutConnectToken, taskName) {
   axios.post(
-    "https://app.rollout.com/api/trigger-event",
+    "https://app.rollouthq.com/api/trigger-event",
     { triggerKey: "task_completed", payload: { task_name: taskName } },
     { Authorization: `Bearer ${rolloutConnectToken}` }
   );
