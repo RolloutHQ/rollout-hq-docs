@@ -1,11 +1,8 @@
 # ✅ Todo App Example
 
-This example apps takes the classic [Todo MVC app](https://todomvc.com/examples/typescript-react/#/) and adds functionality that enables users to perform actions in other apps.
+This example app takes the classic [Todo MVC app](https://todomvc.com/examples/typescript-react/#/) and adds functionality that enables users to perform actions in other apps.
 
-
-When rendered, the example app looks like this:
-
-![Screen Shot 2022-04-29 at 9 26 14 AM](https://user-images.githubusercontent.com/733804/165964045-9fa221aa-2d17-4610-b96d-9a96f8a1549e.png)
+The Todo Example App is hosted [here](https://rollout-todo-demo-client.herokuapp.com/).
 
 
 ### 🪛 Installation
@@ -42,7 +39,5 @@ If you're using a different framework, you can import the `renderComponent` func
 </script>
 ```
 
-
 ### 🧑‍🎨 Custom Styling
 RolloutHQ exposes CSS classes that allow you to [style the embedded UI](https://github.com/PlaybookWorkflows/rollout-hq-docs/blob/main/examples/todo-example-app/rollouthqstyles.css) to match the look and feel of your app. If you're looking to get started event faster, you can also import and use our default theme.
-
