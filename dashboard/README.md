@@ -1,3 +1,4 @@
-# 🔎 Index
+# 🔎 Dashboard - Index
 
-- [Triggers](./Triggers.md)
+- [Triggers](./triggers/Triggers.md)
+- [Secrets](./secrets/Secrets.md)
