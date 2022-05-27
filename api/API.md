@@ -1,6 +1,6 @@
 # ⚙️ API
 
-RolloutHQ's public API is growing quickly. Check back here soon for additional functionality, which will allow you to deliver custom experiences to your users
+RolloutHQ's public API is growing quickly. Check back here soon for additional functionality, which will allow you to deliver custom experiences to your users.
 
 ## 🏠 Base URL
 https://app.rollouthq.com/api
@@ -8,9 +8,9 @@ https://app.rollouthq.com/api
 
 ## 🔐 Authentication
 
-API requests require a Authorization Bearer header where the credential is a RolloutHQ JWT. For details on generating this JWT, see the Quick Start Guide
+API requests require a Authorization Bearer header where the credential is a RolloutHQ JWT. For details on generating this JWT, see the Quick Start Guide.
 
 
 ## 📝 Available Endpoints
 
-- TriggerEvents
+- [trigger-event](https://github.com/RolloutHQ/rollout-hq-docs/blob/main/api/trigger-event.md)
