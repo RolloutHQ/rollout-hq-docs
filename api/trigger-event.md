@@ -1,27 +1,43 @@
-## **Send Trigger Event**
-
+# **Send Trigger Event**
 Endpoint for sending trigger events to Rollout. The associated user is extracted from the JWT.
 
-- **URL**
-  /trigger-event
+`POST` `/trigger-event`
 
-- **Method:**
-  `POST`
+## Body params
+| Param | Type | Required | Description
+| ----- | ---- | -------- | -----------
+| `triggerKey` | `string` | `true` | The unique key specified for this trigger in the RolloutHQ dashbaord
+| `payload` | `object` | `true` | The data fields configured in the RolloutHQ dashboard
 
-- **Data Params**
+## Success Response
 
-**Required:**
-| Param | Type | Description |
-| ----- | ---- | ----------- |
-| triggerKey | string | The unique key specified for this trigger in the RolloutHQ dashbaord |
-| payload | object | The data fields configured in the RolloutHQ dashboard |
+```json
+{
+  "ok": true
+}
+```
 
-- **Success Response:**
+## Errors
 
-  - **Code:** 200 <br />
-    **Content:** `"OK"`
+### Unauthorized
+When authorization fails.<br />
+Response code: `401`
+```json
+{
+  "ok": false,
+  // Some authorization error
+  "error" : "Authorization header is required."
+}
+```
 
-- **Error Response:**
-
-  - **Code:** 401 UNAUTHORIZED <br />
-    **Content:** `{ error : "Authorization header is required." }`
+### Bad Request
+When request data does not match schema.<br />
+Response code: `400`
+```json
+{
+  "ok": false,
+  "error" : {
+    // A zod error
+  }
+}
+```
