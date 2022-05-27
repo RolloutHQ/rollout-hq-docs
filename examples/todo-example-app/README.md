@@ -16,7 +16,7 @@ All you need to do is [render the React component](https://github.com/PlaybookWo
 
 If you're using a different framework, you can import the `renderComponent` function instead. See the Vue example below:
 
-```
+```javascript
 <template>
   <div ref="automationsManager"></div>
 </template>

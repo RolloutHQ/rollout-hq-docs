@@ -1,0 +1,3 @@
+# 🔎 Index
+
+- [Triggers](./Triggers.md)
