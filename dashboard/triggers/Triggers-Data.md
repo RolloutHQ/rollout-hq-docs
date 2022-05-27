@@ -1,4 +1,4 @@
-## < [Triggers](../README.md) -  Create/Update Trigger
+## < [Triggers](Triggers.md) -  Create/Update Trigger
 ---
 
 ## Data
