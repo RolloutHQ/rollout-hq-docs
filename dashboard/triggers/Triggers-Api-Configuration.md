@@ -1,14 +1,22 @@
-## Dashboard - Create/Update Trigger
+## [Triggers](../README.md) - Create/Update Trigger
 ---
 ## Api Configuration
 
 <br />
 
 Allows you to configure your trigger to use either **Push Trigger** or **REST Hooks** patterns.
+<p align="center">
+  <img src="https://user-images.githubusercontent.com/37576329/170776344-a0c8a558-052d-438c-951a-d83b76f10177.png">
+</p>
 
 ### Push Trigger
 
-You will not require any further configuration, and will be shown an example body for the payload to send as indicated in [API > Send Trigger Event](../../api/TriggerEvents.md)
+A Push trigger requires no further configuration. You can read more on how to send trigger events in the [API > Send Trigger Event](../../api/TriggerEvents.md) section.
+
+<p align="center">
+  <img src="https://user-images.githubusercontent.com/37576329/170776572-0d6e1a0c-fb38-44f3-833e-1f9a6275a827.png
+">
+</p>
 
 ### REST Hooks
 
@@ -31,6 +39,11 @@ Selecting this pattern will enable you to configure the following:
 4. Configure options for:
    - Omitting empty parameters
    - Omitting empty body fields
+
+<p align="center">
+  <img src="https://user-images.githubusercontent.com/37576329/170776705-fe59c0a1-7c3a-41c4-93cc-db6b484d5204.png
+">
+</p>
 
 ### **Perform**
 

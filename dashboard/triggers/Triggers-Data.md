@@ -1,4 +1,4 @@
-## Dashboard -  Create/Update Trigger
+## [Triggers](../README.md) -  Create/Update Trigger
 ---
 
 ## Data
@@ -15,3 +15,7 @@ Allows you to configure multiple keys which will be available to a user when usi
 | Label | true     |        | Label shown to user when selecting variable reference (via the `@` menu). |
 
 <br />
+
+<p align="center">
+  <img src="https://user-images.githubusercontent.com/37576329/170776151-f34a7e4e-dc70-4f9f-9ea1-1f9fc018c2c9.png">
+</p>

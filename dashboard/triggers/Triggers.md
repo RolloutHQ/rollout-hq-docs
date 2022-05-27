@@ -1,4 +1,4 @@
-# ⚙️ Triggers
+# [Dashboard](../README.md) - Triggers
 
 This view allows you to create new or existing triggers for your app.
 

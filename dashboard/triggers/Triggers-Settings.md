@@ -1,4 +1,4 @@
-## Dashboard -  Create/Update Trigger
+## [Triggers](../README.md) -  Create/Update Trigger
 ---
 ## Settings
 
