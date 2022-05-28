@@ -89,5 +89,9 @@ if (hmacToCompare != hmac) {
   throw new Error("Unauthorized");
 }
 
+const mappedPayload = {
+  task_name: payload.task_name,
+};
+
 return [mappedPayload];
 ```
