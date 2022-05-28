@@ -14,8 +14,7 @@ Allows you to configure your trigger to use either **Push Trigger** or **REST Ho
 A Push trigger requires no further configuration. You can read more on how to send trigger events in the [API > Send Trigger Event](../../api/TriggerEvents.md) section.
 
 <p align="center">
-  <img src="https://user-images.githubusercontent.com/37576329/170776572-0d6e1a0c-fb38-44f3-833e-1f9a6275a827.png
-">
+  <img src="https://user-images.githubusercontent.com/37576329/170776572-0d6e1a0c-fb38-44f3-833e-1f9a6275a827.png">
 </p>
 
 ### REST Hooks
@@ -41,8 +40,7 @@ Selecting this pattern will enable you to configure the following:
    - Omitting empty body fields
 
 <p align="center">
-  <img src="https://user-images.githubusercontent.com/37576329/170776705-fe59c0a1-7c3a-41c4-93cc-db6b484d5204.png
-">
+  <img src="https://user-images.githubusercontent.com/37576329/170776705-fe59c0a1-7c3a-41c4-93cc-db6b484d5204.png">
 </p>
 
 ### **Perform**
