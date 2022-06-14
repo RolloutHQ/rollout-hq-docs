@@ -1,6 +1,6 @@
 # < [Dashboard](../README.md) - Triggers
 
-This view allows you to create new or existing triggers for your app.
+This view allows you to create new or update existing triggers for your app.
 
 - [Settings](./Triggers-Settings.md)
 - [Data](./Triggers-Data.md)

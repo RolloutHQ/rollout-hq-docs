@@ -2,9 +2,21 @@
 
 ---
 
-The perform code blocks found in the perform section of a REST Hook trigger configuration allows the user to perform custom mapping, and additional nodejs logic like HMAC authentication checks.
+The perform code blocks found in API configuration interfaces allow the user to perform custom mapping, additional nodejs logic like HMAC authentication checks and/or any additional HTTP requests.
 
 In order to do so a number of global objects are available in the execution context of the perform code block.
+
+- [`utils` Object](#utils-object)
+  * [`utils.crypto`](#utilscrypto)
+  * [`utils.fetch`](#utilsfetch)
+- [`context` Object](#context-object)
+  * [`context.targetUrl` (string)](#contexttargeturl-string)
+  * [`context.cleanedRequest` (object)](#contextcleanedrequest-object)
+  * [`context.rawRequest` (object)](#contextrawrequest-object)
+- [`env` Object](#env-object)
+  * [Zapier Compatibility](#zapier-compatibility)
+- [`inputs` Object](#inputs-object)
+---
 
 ## `utils` Object
 
@@ -81,7 +93,9 @@ Headers other than `Content-Length` and `Content-Type` will be prefixed with `Ht
 
 ---
 
-The `env` object holds any environment variables you have configured under the [Secrets](../dashboard/secrets/Index.md) dashboard view.
+The `env` object holds any environment variables you have configured under the [Configuration](../dashboard/configuration/Configuration.md) dashboard view.
+
+> :information_source: `ROLLOUT_CLIENT_ID` and `ROLLOUT_CLIENT_SECRET` are reserved and will match the information found in the [Configuration](../dashboard/configuration/Configuration.md) page. 
 
 <br />
 
@@ -95,3 +109,28 @@ The following are also available with some limited compatibility
 | -------- | ---------------------------------------------------------- |
 | z        | Supports a `hash` and `request` method similar to Zapier's |
 | bundle   | Points to the `context` object mentioned above             |
+
+
+<br />
+
+## `inputs` Object
+
+---
+
+The `inputs` object is available when configuring an action, and maps to a record of existing action keys in the data tab, along with whatever values a user assigned.
+
+
+For example, an action configured with the following inputs:
+- `task_name`
+- `task_description`
+
+will make an `inputs` object available with the following shape:
+
+```javascript
+{
+  task_name: "some user-assigned value",
+  task_description: "another user-assigned value"
+}
+
+console.debug(inputs.task_name); // "some user-assigned value"
+```

@@ -1,4 +1,5 @@
 # 🔎 Dashboard - Index
 
 - [Triggers](./triggers/Triggers.md)
-- [Secrets](./secrets/Secrets.md)
+- [Actions](./actions/Actions.md)
+- [Configuration](./configuration/Configuration.md)
