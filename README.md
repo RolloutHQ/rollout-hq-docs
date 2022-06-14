@@ -1,13 +1,16 @@
 # 🔎 Index
 
-### 🚀 [Quick Start Guide](https://github.com/RolloutHQ/rollout-hq-docs/blob/main/QuickStart.md#-quick-start-guide)
+### 🚀 [Quick Start Guide](./QuickStart.md#🚀-quick-start-guide)
 Steps to set up a simple RolloutHQ implementation
 
-### 🧩 [Components](https://github.com/RolloutHQ/rollout-hq-docs/blob/main/Components.md)
+### 🧩 [Components](./Components.md)
 Documentation on the RolloutHQ react components
 
-### ⚙️ [API](https://github.com/RolloutHQ/rollout-hq-docs/blob/main/api/API.md#%EF%B8%8F-api)
+### ⚙️ [API](./api/API.md)
 Description of available API endpoints
 
-### ➡️ [Triggers](https://github.com/RolloutHQ/rollout-hq-docs/blob/main/dashboard/triggers/Triggers.md)
+### ➡️ [Triggers](./dashboard/triggers/Triggers.md)
 Summary of Trigger types and their configurations
+
+### ⚡ [Actions](./dashboard/actions/Actions.md)
+Summary of Actions and their configurations
