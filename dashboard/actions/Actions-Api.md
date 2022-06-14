@@ -6,7 +6,7 @@
 
 <br />
 
-Allows you to configure the http request which will be made every time the action is triggered.
+Allows you to configure the http request which will be made every time the action is executed.
 <br />
 <br />
 
