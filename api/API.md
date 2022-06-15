@@ -11,4 +11,4 @@ https://app.rollouthq.com/api
 API requests require a Authorization Bearer header where the credential is a RolloutHQ JWT. For details on generating this JWT, see the Quick Start Guide.
 
 
-## 📝 [API Documentation] (https://app.rollouthq.com/api-docs/#/credentials)
+## 📝 [API Documentation](https://app.rollouthq.com/api-docs/#/credentials)
