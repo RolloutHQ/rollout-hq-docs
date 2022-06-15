@@ -11,6 +11,4 @@ https://app.rollouthq.com/api
 API requests require a Authorization Bearer header where the credential is a RolloutHQ JWT. For details on generating this JWT, see the Quick Start Guide.
 
 
-## 📝 Available Endpoints
-
-- [trigger-event](https://github.com/RolloutHQ/rollout-hq-docs/blob/main/api/trigger-event.md)
+## 📝 [API Documentation] (https://app.rollouthq.com/api-docs/#/credentials)
