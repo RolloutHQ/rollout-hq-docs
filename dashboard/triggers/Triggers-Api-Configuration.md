@@ -29,6 +29,10 @@ Selecting this pattern will enable you to configure the following:
 
 ### **Url Request Schema**
 
+### UI Mode
+---
+<br />
+
 1. Select an http method from the dropdown (e.g. `POST`)
 2. Enter a request url where Rollout should send requests to (e.g. `https://yourapi.com/subscribe`)
 3. Configure key value pairs for:
@@ -39,9 +43,29 @@ Selecting this pattern will enable you to configure the following:
    - Omitting empty parameters
    - Omitting empty body fields
 
-<p align="center">
-  <img src="https://user-images.githubusercontent.com/37576329/170776705-fe59c0a1-7c3a-41c4-93cc-db6b484d5204.png">
-</p>
+<div align="center">
+  <img src="../../img/url-request-box.png">
+</div>
+<div align="center">
+  <sub><i>Variables can be accessed with the <code>{{</code> menu. Switching to code mode will expose greater configurability. </i></sub>
+</div >
+
+<br />
+
+### Code Mode
+---
+<br />
+
+It is also possible to configure your action's api configuration in code mode, granting a greater degree of control over each request. For example, if you require HMAC authentication against the configured endpoint, you'll want to set this up here. 
+
+A list of available execution context functions and variables can be found in the [Perform Global Objects](../../api/PerformGlobalObjects.md) page.
+
+> :information_source: The first time code mode is saved, any current UI configurations will be parsed to code. Once saved, any subsequent switches from UI <> Code mode will not override any additional code changes you make. Likewise, any code updates made will not affect UI configuration settings.
+> <br /><br />
+> Whichever mode is saved takes precedence when actions are executed
+
+<br />
+
 
 ### **Perform**
 
