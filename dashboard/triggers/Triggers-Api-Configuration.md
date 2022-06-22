@@ -43,8 +43,10 @@ Selecting this pattern will enable you to configure the following:
    - Omitting empty parameters
    - Omitting empty body fields
 
+<br/>
+
 <div align="center">
-  <img src="../../img/url-request-box.png">
+  <img width="550px" src="../../img/url-request-box.png">
 </div>
 <div align="center">
   <sub><i>Variables can be accessed with the <code>{{</code> menu. Switching to code mode will expose greater configurability. </i></sub>
