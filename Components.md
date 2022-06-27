@@ -17,3 +17,6 @@ and then import the components from the package:
 - [MyAutomations](./components/MyAutomations.md)
 - [AutomationCreator](./components/AutomationCreator.md)
 - [AutomationEditor](./components/AutomationEditor.md)
+- [BlueprintsManager](./components/BlueprintsManager.md)
+- [BlueprintActivator](./components/BlueprintActivator.md)
+- [MyBlueprints](./components/MyBlueprints.md)
