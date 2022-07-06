@@ -2,7 +2,7 @@
 
 ---
 
-The perform code blocks found in API configuration interfaces allow the user to perform custom mapping, additional nodejs logic like HMAC authentication checks and/or any additional HTTP requests.
+The perform code blocks found in API configuration interfaces allow the user to perform custom mapping, additional Node.js logic like HMAC authentication checks and/or any additional HTTP requests.
 
 In order to do so a number of global objects are available in the execution context of the perform code block.
 
@@ -10,6 +10,7 @@ In order to do so a number of global objects are available in the execution cont
   * [`utils.crypto`](#utilscrypto)
   * [`utils.fetch`](#utilsfetch)
 - [`context` Object](#context-object)
+  * [`context.automation` (object)](#contextautomation-object)
   * [`context.targetUrl` (string)](#contexttargeturl-string)
   * [`context.cleanedRequest` (object)](#contextcleanedrequest-object)
   * [`context.rawRequest` (object)](#contextrawrequest-object)
@@ -30,7 +31,7 @@ Provide cryptographic functionality which includes a set of wrappers for OpenSSL
 
 Usage:
 
-```javascript
+```tsx
 const stringToHash = "rollout";
 const hash = crypto.createHash("md5").update(stringToHash).digest("hex");
 ```
@@ -53,11 +54,15 @@ const result = await utils.fetch(url, options);
 
 ---
 
+### `context.automation` (object)
+
+`Automation` object related to execution. See [Automation docs](/api/Automation.md).
+
 <br />
 
 ### `context.targetUrl` (string)
 
-Url of webhook belonging to automation to execute.
+URL of webhook belonging to automation to execute.
 
 <br />
 

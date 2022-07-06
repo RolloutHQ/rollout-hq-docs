@@ -1,4 +1,4 @@
-# **Send Trigger Event**
+# Send Trigger Event
 Endpoint for sending trigger events to Rollout. The associated user is extracted from the JWT.
 
 `POST` `/trigger-event`
