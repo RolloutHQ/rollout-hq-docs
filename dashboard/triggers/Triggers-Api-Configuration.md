@@ -1,10 +1,13 @@
 ## < [Triggers](Triggers.md) - Create/Update Trigger
+
 ---
+
 ## Api Configuration
 
 <br />
 
 Allows you to configure your trigger to use either **Push Trigger** or **REST Hooks** patterns.
+
 <p align="center">
   <img src="https://user-images.githubusercontent.com/37576329/170776344-a0c8a558-052d-438c-951a-d83b76f10177.png">
 </p>
@@ -30,7 +33,9 @@ Selecting this pattern will enable you to configure the following:
 ### **Url Request Schema**
 
 ### UI Mode
+
 ---
+
 <br />
 
 1. Select an http method from the dropdown (e.g. `POST`)
@@ -55,12 +60,14 @@ Selecting this pattern will enable you to configure the following:
 <br />
 
 ### Code Mode
+
 ---
+
 <br />
 
-It is also possible to configure your action's api configuration in code mode, granting a greater degree of control over each request. For example, if you require HMAC authentication against the configured endpoint, you'll want to set this up here. 
+It is also possible to configure your action's api configuration in code mode, granting a greater degree of control over each request. For example, if you require HMAC authentication against the configured endpoint, you'll want to set this up here.
 
-A list of available execution context functions and variables can be found in the [Perform Global Objects](../../api/PerformGlobalObjects.md) page.
+A list of available execution context functions and variables can be found in the [Perform Global Objects](../../api/perform-code-global-objects.md) page.
 
 > :information_source: The first time code mode is saved, any current UI configurations will be parsed to code. Once saved, any subsequent switches from UI <> Code mode will not override any additional code changes you make. Likewise, any code updates made will not affect UI configuration settings.
 > <br /><br />
@@ -68,18 +75,17 @@ A list of available execution context functions and variables can be found in th
 
 <br />
 
-
 ### **Perform**
 
 The perform function is executed every time Rollout receives a webhook request, making it an ideal place to perform any mapping transformations or implementing custom logic. (e.g. HMAC authentication).
 
-The following [Perform Global Objects](../../api/PerformGlobalObjects.md) are available when executing custom code:
+The following [Perform Global Objects](../../api/perform-code-global-objects.md) are available when executing custom code:
 
 - `utils`
 - `context`
 - `env`
 
-You can find detailed info of what each object holds and backwards zapier compatibility [here](../../api/PerformGlobalObjects.md).
+You can find detailed info of what each object holds and backwards zapier compatibility [here](../../api/perform-code-global-objects.md).
 
 > Note: Return value of the perform function must be the first element of an array
 
