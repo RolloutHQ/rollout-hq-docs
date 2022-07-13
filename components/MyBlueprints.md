@@ -8,7 +8,7 @@ This component relies on being wrapped in `RolloutConnectProvider` in order to p
 
 | prop                 | type                | required | Description                                                                                                                                                           |
 | -------------------- | ------------------- | -------- | --------------------------------------------------------------------------------------------------------------------------------------------------------------------- |
-| onOpenActivationForm | (blueprint) => void | true     | A callback to call when a user intents to activate, deactivate or configure an existing blueprint. Use this to navigate to a view which renders `BlueprintActivator`. |
+| `onOpenActivationForm` | `(blueprint) => void` | `true`     | A callback to call when a user intents to activate, deactivate or configure an existing blueprint. Use this to navigate to a view which renders `BlueprintActivator`. |
 
 ## Example
 

@@ -8,8 +8,8 @@ This component relies on being wrapped in `RolloutConnectProvider` in order to p
 
 | prop               | type                 | required | default | Description                                                                                                                            |
 |--------------------|----------------------|----------|---------|---------------------|
-| onCreateAutomation | () => void           | true     | -       | A callback to call when user clicks on the "New" button. Use this to navigate to a view which renders `AutomationCreator`.             |
-| onEditAutomation   | (automation) => void | true     | -       | A callback to call when user intents to edit an existing automation. Use this to navigate to a view which renders  `AutomationEditor`. |
+| `onCreateAutomation` | `() => void`           | `true`     | -       | A callback to call when user clicks on the "New" button. Use this to navigate to a view which renders `AutomationCreator`.             |
+| `onEditAutomation`   | `(automation) => void` | `true`     | -       | A callback to call when user intents to edit an existing automation. Use this to navigate to a view which renders  `AutomationEditor`. |
 
 ## Example
 

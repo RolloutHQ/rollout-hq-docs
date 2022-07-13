@@ -7,8 +7,8 @@ Selecting a blueprint will give the end user the ability to connect a relevant a
 
 | prop       | type   | required | default                       | Description                         |
 | ---------- | ------ | -------- | ----------------------------- | ----------------------------------- |
-| token      | string | true     | -                             | Token to authenticate the end user. |
-| apiBaseUrl | string | false    | https://app.rollouthq.com/api | URL to the Rollout HQ api endpoint. |
+| `token`      | `string` | `true`     | -                             | Token to authenticate the end user. |
+| `apiBaseUrl` | `string` | `false`    | https://app.rollouthq.com/api | URL to the Rollout HQ api endpoint. |
 
 ## Example
 

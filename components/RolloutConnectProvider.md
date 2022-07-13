@@ -7,9 +7,9 @@ You can put this at the root of your React tree, or just wrap any component that
 
 | prop        | type     | required | default | Description                                  |
 |-------------|----------|----------|---------|----------------------------------------------|
-| token       | string   | true     | -       | Token to authenticate the end user.          |
-| apiBaseUrl  | string   | false    | -       | URL to the Rollout HQ api endpoint.          |
-| allowedApps | string[] | false    | -       | List of Apps user is allowed to choose from. |
+| `token`       | `string`   | `true`     | -       | Token to authenticate the end user.          |
+| `apiBaseUrl`  | `string`   | `false`    | -       | URL to the Rollout HQ api endpoint.          |
+| `allowedApps` | `string[]` | `false`    | -       | List of Apps user is allowed to choose from. |
 
 ## Allowed Apps
 

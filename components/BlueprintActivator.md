@@ -6,7 +6,7 @@ This component allows an end user to activate, deactivate and configure a specif
 
 | prop        | type   | required | Description                                                                                               |
 | ----------- | ------ | -------- | --------------------------------------------------------------------------------------------------------- |
-| blueprintId | string | true     | A unique identifier for the blueprint. (Obtainable via the dashboard by selecting the relevant Blueprint) |
+| `blueprintId` | `string` | `true`     | A unique identifier for the blueprint. (Obtainable via the dashboard by selecting the relevant Blueprint) |
 
 ## Example
 

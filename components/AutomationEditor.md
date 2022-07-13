@@ -8,8 +8,8 @@ This component relies on being wrapped in `RolloutConnectProvider` in order to p
 
 | prop                | type                 | required | default | Description                                                                                          |
 |---------------------|----------------------|----------|---------|----------------------------------|
-| automationId        | string               | true     | -       | ID of the automation to edit.                                                                        |
-| onAutomationUpdated | (automation) => void | true     | -       | A callback to call after user successfully updates an automation. You can use this to navigate away. |
+| `automationId`        | `string`               | `true`     | -       | ID of the automation to edit.                                                                        |
+| `onAutomationUpdated` | `(automation) => void` | `true`     | -       | A callback to call after user successfully updates an automation. You can use this to navigate away. |
 
 ## Example
 
