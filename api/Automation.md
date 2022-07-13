@@ -4,13 +4,13 @@ An `Automation` specifies an operation to execute in an app (`Action`) when an a
 
 ### Automation object
 
-| Property | Type    | Description                                                                                                                               |
-| -------- | ------- | ----------------------------------------------------------------------------------------------------------------------------------------- |
-| `id`       | `string`  | The `Automation's` unqiue identifer                                                                                                       |
-| `active`   | `boolean` | When true, the `Automation` is "on" and will execute upon the receipt of new trigger events. When false, the Automation will not execute. |
-| `name`     | `string`  | User-facing name of the `Automation`                                                                                                      |
-| `trigger`  | `Trigger` | Specifies the event that causes this `Automation` to execute                                                                              |
-| `action`   | `Action`  | Operation to perform when the `Automation` is executed                                                                                    |
+| Property  | Type      | Description                                                                                                                               |
+| --------- | --------- | ----------------------------------------------------------------------------------------------------------------------------------------- |
+| `id`      | `string`  | The `Automation's` unqiue identifer                                                                                                       |
+| `active`  | `boolean` | When true, the `Automation` is "on" and will execute upon the receipt of new trigger events. When false, the Automation will not execute. |
+| `name`    | `string`  | User-facing name of the `Automation`                                                                                                      |
+| `trigger` | `Trigger` | Specifies the event that causes this `Automation` to execute                                                                              |
+| `action`  | `Action`  | Operation to perform when the `Automation` is executed                                                                                    |
 
 <br />
 
@@ -20,15 +20,15 @@ An `Automation's` `Trigger` specifies the event that causes an `Automation` to e
 
 ### Partner Trigger object
 
-| Property  | Type                                 | Description                                             |
-| --------- | ------------------------------------ | ------------------------------------------------------- |
-| `type`      | `"customerResthook" \| "customerPush"` | Is this `Trigger` a Push or RestHook Partner `Trigger`? |
-| `triggerId` | `string`                               | The `Trigger's` unique ID                               |
+| Property     | Type                                   | Description                                             |
+| ------------ | -------------------------------------- | ------------------------------------------------------- |
+| `type`       | `"customerResthook" \| "customerPush"` | Is this `Trigger` a Push or RestHook Partner `Trigger`? |
+| `triggerKey` | `string`                               | The `Trigger's` unique `key`                            |
 
 ### Third Party Trigger object
 
-| Property     | Type         | Description                                                                                               |
-| ------------ | ------------ | --------------------------------------------------------------------------------------------------------- |
+| Property       | Type           | Description                                                                                               |
+| -------------- | -------------- | --------------------------------------------------------------------------------------------------------- |
 | `type`         | `"thirdParty"` | Specifies this `Trigger` as a Third Party `Trigger`                                                       |
 | `appSlug`      | `string`       | Unique id for the Third Party App the `Trigger` belongs to                                                |
 | `triggerSlug`  | `string`       | The `Trigger's` identiifer. Unique among its app's `Triggers`                                             |
@@ -43,16 +43,16 @@ An `Automations` action specifies the operation to be performed when the `Automa
 
 ### Partner Action object
 
-| Property    | Type       | Description                                                       |
-| ----------- | ---------- | ----------------------------------------------------------------- |
+| Property      | Type         | Description                                                       |
+| ------------- | ------------ | ----------------------------------------------------------------- |
 | `type`        | `"customer"` | Specifies this `Action` as a Partner `Action`                     |
 | `actionId`    | `string`     | The `Action's` unique id                                          |
 | `inputParams` | `object`     | User input that specifies the values of the `Action's` parameters |
 
 ### Third Party Action object
 
-| Property     | Type         | Description                                                       |
-| ------------ | ------------ | ----------------------------------------------------------------- |
+| Property       | Type           | Description                                                       |
+| -------------- | -------------- | ----------------------------------------------------------------- |
 | `type`         | `"thirdParty"` | Specifies this `Action` as a Third Party `action`                 |
 | `appSlug`      | `string`       | Unique id for the Third Party App the `Action` belongs to         |
 | `actionSlug`   | `string`       | The `Action's` identiifer. Unique among its app's `Actions`       |
